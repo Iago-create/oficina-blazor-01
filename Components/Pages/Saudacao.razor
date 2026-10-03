@@ -1,0 +1,14 @@
+@page "/saudacao"
+@rendermode InteractiveServer
+
+<input @bind="nome" placeholder ="Digite o seu nome"/>
+<input @bind="idade" placeholder="Digite sua idade" type="number"/>
+
+
+<h2>Olá, @nome!</h2>
+<p>Você tem @idade anos.</p>
+
+@code{
+  string nome = "";
+  int idade = 0;
+}

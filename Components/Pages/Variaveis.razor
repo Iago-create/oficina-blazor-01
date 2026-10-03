@@ -1,0 +1,16 @@
+@page "/variaveis"
+ 
+<h1>Minhas Variáveis</h1>
+ 
+<p>Nome: @nome</p>
+<p>Idade: @idade</p>
+<p>Altura: @altura</p>
+<p>É estudante? @estudante</p>
+<p> @nome tem @idade anos e daqui 10 anos terá @(idade + 10).</p>
+ 
+@code {
+    string nome = "João Lucas";
+    int idade = 21;
+    double altura = 1.75;
+    bool estudante = true;
+}

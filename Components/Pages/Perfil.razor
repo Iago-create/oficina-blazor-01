@@ -1,0 +1,17 @@
+@page "/perfil"
+@rendermode InteractiveServer
+
+<input @bind="nome" placeholder ="Digite o seu nome"/>
+<input @bind="idade" placeholder="Digite sua idade" type="number"/>
+<input @bind="curso" placeholder ="Digite seu curso"/>
+<input @bind="cidade" placeholder ="Digite a sua cidade"/> 
+
+<h2>Olá, @nome!</h2>
+<p>Você tem @idade anos, mora em @cidade e cursa @curso. Daqui a 10 anos voce terá @(idade + 10) anos.</p>
+
+@code{
+  string nome = "";
+  string cidade ="";
+  string curso = "";
+  int idade = 0;
+}
